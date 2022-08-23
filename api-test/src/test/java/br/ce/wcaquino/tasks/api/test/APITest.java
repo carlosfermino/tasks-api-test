@@ -38,7 +38,7 @@ public class APITest {
 	@Test
 	public void naoDeveAdicionarTarefaInvalida() {
 		RestAssured.given()
-			.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2010-08-22\" }")
+			.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2015-08-22\" }")
 			.contentType(ContentType.JSON)
 		.when()
 			.post("/todo")
